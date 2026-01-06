@@ -1,0 +1,31 @@
+PODZIAŁ ZADAŃ
+
+Maryja 1: Specjalista ds. "Cuts"
+	1)	Zadanie: Selekcja zdarzeń i balansowanie klas.
+	2)	TO DO:
+		a)	Połączenie plików klas (A,C,E,G oraz B,F),  zapewnienie balansu 50/50 (?). DONE
+		b)	 Znalezienie progów fizycznych (Cuts): odrzucenie szumu. DONE
+		c)	 Przygotowanie „czystego” zbioru treningowego, który zostanie przekazany Jezusowi. DONE
+		d) Przekazanie pliku w odpowiednim formacie do Jezuska 2. DONE
+
+Jezusek 2: Architekt ML 
+	1)	Zadanie: Budowa i optymalizacja lasu losowego (Random Forest).
+	2)	TO DO:
+		a)	Wybór cech do treningu (usuwanie szumiących zmiennych, np. time).
+		b)	Tuning hiperparametrów.
+		c)	Zastosowanie walidacji krzyżowej (Cross-Validation) w celu zapewnienia stabilności modelu.
+		d)	Wyniki w plikach do analizy przez dziecko 3. 
+
+Dziecko 3: Analiza Danych
+	1)	Zadanie: Ostateczna analiza statystyczna i oprawa graficzna.
+	2)	TO DO:
+		a)	Generowanie wykresów końcowych
+		b)	Stworzenie wizualizacji 3D „najciekawszych” przypadków
+		c)	Opracowanie końcowych statystyk do raportu.
+
+Dziecko 4: Audytor Modelu 
+	i)	Zadanie: Udowodnienie naukowej poprawności modelu 
+	ii)	TODO:
+		(a)	 Porównanie wyników lasu losowego z modelem bazowym
+		(b)	Analiza Błędów: Sprawdzenie, jakie zdarzenia model nadal myli i dlaczego (np. czy myli krótkie tory z kaskadami?).
+		(c)	Weryfikacja Fizyczna: Potwierdzenie, czy decyzje modelu są zgodne z fizyką detektora (np. czy model faktycznie kluczuje po energii i kącie zenitalnym).
