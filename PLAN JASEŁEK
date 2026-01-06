@@ -3,10 +3,10 @@ PODZIAŁ ZADAŃ
 Maryja 1: Specjalista ds. "Cuts"
 	1)	Zadanie: Selekcja zdarzeń i balansowanie klas.
 	2)	TO DO:
-		a)	Połączenie plików klas (A,C,E,G oraz B,F),  zapewnienie balansu 50/50 (?).
-		b)	 Znalezienie progów fizycznych (Cuts): odrzucenie szumu.
-		c)	 Przygotowanie „czystego” zbioru treningowego, który zostanie przekazany Jezusowi.
-		d) Przekazanie pliku w odpowiednim formacie do Jezuska 2. 
+		a)	Połączenie plików klas (A,C,E,G oraz B,F),  zapewnienie balansu 50/50 (?). DONE
+		b)	 Znalezienie progów fizycznych (Cuts): odrzucenie szumu. DONE
+		c)	 Przygotowanie „czystego” zbioru treningowego, który zostanie przekazany Jezusowi. DONE
+		d) Przekazanie pliku w odpowiednim formacie do Jezuska 2. DONE
 
 Jezusek 2: Architekt ML 
 	1)	Zadanie: Budowa i optymalizacja lasu losowego (Random Forest).
