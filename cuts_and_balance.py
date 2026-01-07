@@ -25,7 +25,7 @@ os.makedirs(plot_dir, exist_ok=True)
 def apply_cuts(df):
 
     # Zmienna time - usuniety pre-trigger (wartosci < 0) i długie ogony
-    df = df[ df['time'] < 2500 ]
+    df = df[ df['time'] < 1800 ]
     
     # Zmienna ToT - usuniete wartości < 10, ktore najprawdopodobnie sa szumem (dark noise)
     df = df[ df['tot'] > 10 ]
