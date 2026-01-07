@@ -1,3 +1,5 @@
+from astropy.coordinates import cartesian_to_spherical
+
 dfS = pd.read_csv(BASE_DIR /"dataset_shower_balanced.csv")
 dfs = dfS.head(10000)
 dfT = pd.read_csv(BASE_DIR /"dataset_track_balanced.csv")
