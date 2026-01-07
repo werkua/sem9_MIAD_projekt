@@ -1,0 +1,17 @@
+dfS = pd.read_csv(BASE_DIR /"dataset_shower_balanced.csv")
+dfs = dfS.head(10000)
+dfT = pd.read_csv(BASE_DIR /"dataset_track_balanced.csv")
+dft = dfT.head(10000)
+
+dfst = pd.concat([dfs, dft])
+xy = dfst.sample(frac=1).reset_index(drop=True)
+print(xy)
+
+dirR, dirTheta, dirPhi = cartesian_to_spherical(xy["dir_x"], xy["dir_y"], xy["dir_z"])
+xy["dir_theta"] = dirTheta
+xy["dir_phi"] = dirPhi
+
+posR, posTheta, posPhi = cartesian_to_spherical(xy["pos_x"], xy["pos_y"], xy["pos_z"])
+xy["pos_R"] = posR
+xy["pos_theta"] = posTheta
+xy["pos_phi"] = posPhi
