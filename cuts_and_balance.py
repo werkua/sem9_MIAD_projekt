@@ -25,7 +25,7 @@ os.makedirs(plot_dir, exist_ok=True)
 def apply_cuts(df):
 
     # Zmienna time - usuniety pre-trigger (wartosci < 0) i długie ogony
-    df = df[ (df['time'] > 0) & (df['time'] < 2500) ]
+    df = df[ df['time'] < 2500 ]
     
     # Zmienna ToT - usuniete wartości < 10, ktore najprawdopodobnie sa szumem (dark noise)
     df = df[ df['tot'] > 10 ]
@@ -72,7 +72,7 @@ df_shower = load_and_process_group(shower_files, "SHOWER")
 # Balansowanie danych
 n_track = len(df_track)
 n_shower = len(df_shower)
-min_samples = min(n_track, n_shower)
+min_samples = min(n_track, n_shower, 200000)
 
 print(f"\n--- Balansowanie klas ---")
 print(f"Liczba Track: {n_track}, Liczba Shower: {n_shower}")
