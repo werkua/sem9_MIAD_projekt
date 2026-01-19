@@ -11,8 +11,13 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 from ML_output_analysis import run_analysis
+import os
+os.makedirs(input_dir, exist_ok=True)
 
 BASE_DIR = "ML_Ready_Data"
+output_dir = "output_dziecko3"
+input_dir = "input_from_Jezusek2"
+
 
 # files = ["Data/atm_muon.h5",
 #          "Data/atm_neutrino_classA.h5",
@@ -151,12 +156,6 @@ print("recall   :", recall_score(y_test, y_pred))
 
 
 
-output_dir = "output_dziecko3"
-input_dir = "input_from_Jezusek2"
-
-
-import os
-os.makedirs(input_dir, exist_ok=True)
 
 
 pred_df = xy.loc[X_test.index].copy()
